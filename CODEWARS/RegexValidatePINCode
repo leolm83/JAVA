@@ -1,0 +1,14 @@
+public class Solution {
+private static boolean isInteger(String str) {
+        return str != null && str.matches("[0-9]*");
+    }
+  public static boolean validatePin(String pin) {
+    
+      if(isInteger(pin)==true && pin.length()==4 ||pin.length()==6){
+        return true;
+    }
+      else{
+        return false;
+    }
+  }
+}
